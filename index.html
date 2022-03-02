@@ -8,14 +8,30 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <!--set up left side box section with profile information-->
     <div class="left-side-box">
-        
         <div class="profile">
         <h2>PROFILE</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, fuga? Fuga accusantium debitis delectus in fugiat doloribus.</p>
+        <p>
+            Highly motivated and diligent professional looking to switch careers to pursue passion for software development. <br />
+            Offers 5 years of experience working in manufacturing environment as a front-line supervisor and team-player. <br />
+            Possesses high degree of problem-solving and analytical skils with a self-motivated attitude. <br /> 
+        </p>
         <br />
         <h2>EDUCATION</h2>
-        <p>Rutgers Full Stack Development Coding Bootcamp</p>
+        <!--create tree for education-->
+        <ul id="education">
+            <li><span class="caret">Rutgers Coding Bootcamp</span>
+                <ul class="nested">
+                    <li>Certificate of Completion</li>
+                    <li>February 2022-August 2022</li>
+                </ul>
+            <li><span class="caret">Rowan University</span>
+                <ul class="nested">
+                    <li>B.S. Chemistry</li>
+                    <li>Magna Cum Laude</li>
+                </ul>
+        </ul>
         <br />
         <h2>SKILLS</h2>
         <ul>
@@ -30,6 +46,7 @@
         </div>
     </div>
 
+    <!--set up top right box with img and header inside-->
     <div class="top-right-box">
         <img src="assets/img/img2.jpg" alt="A photo of Christine standing outside">
         <header class="header">
@@ -38,6 +55,7 @@
         </header>
     </div>
 
+    <!--set up bottom right box with experience and project information-->
     <div class="bottom-right-box">
         <section class="experience">
             <h2>EXPERIENCE</h2>
@@ -48,6 +66,20 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere illo consequatur, facilis sunt, nisi maiores quas vel autem nam velit at quasi porro ullam cupiditate labore temporibus architecto assumenda.</p>
         </section>
     </div>
+    </body>
     
-</body>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function() {
+
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+    });
+        }
+    </script>
+
 </html>
+
