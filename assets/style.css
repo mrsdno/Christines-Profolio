@@ -5,8 +5,20 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
-.black-box {
-    background-color: rgb(54, 48, 48);
+h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #CB997E;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.top-right-box {
+    background-color: #463F3A;
     height: 300px;
     position: relative;
     float: right;
@@ -15,7 +27,7 @@
     z-index:0;
 }
 
-.black-box header {
+.top-right-box header {
     color: white;
     position: absolute;
     top: 10%;
@@ -26,17 +38,18 @@
     display: inline-block;
 }
 
-.black-box h1 {
-    border-bottom: 3px solid rgb(170, 135, 127);
+.top-right-box h1 {
+    border-bottom: 3px solid #E8F7EE;
     display: inline-block;
     font-size: 3vmax;
+    color: #CB997E;
 }
 
-.black-box h2 {
+.top-right-box h2 {
     font-size: 2vmax;
 }
 
-.black-box img {
+.top-right-box img {
     position: relative;
     display: inline;
     left: -10vw;
@@ -45,12 +58,13 @@
     width: 300px;
      height: auto;
     border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%
+    border-bottom-left-radius: 20%;
+    border: 3px solid #E8F7EE;
 }
 
-.dark-tan-box {
+.left-side-box {
     width: 23%;
-    background-color: rgb(170, 135, 127);
+    background-color: #6B705C;
     position: relative;
     display: inline-block;
     flex-direction:column;
@@ -60,13 +74,22 @@
     padding-right: 30px
 }
 
-.sidebar {
+.profile {
     position: relative;
     top: 375px;
 }
 
-.light-tan-box {
-    background-color: tan;
+.profile h2 {
+    border-bottom: 3px solid #E8F7EE;
+    display: inline-block;
+}
+
+.sidebar li {
+    margin-left: 30px;
+}
+
+.bottom-right-box {
+    background-color:#8A817C;
     color: white;
     position: absolute;
     right: 0px;
@@ -81,5 +104,10 @@
 .experience {
     position: absolute;
     top: 375px;
+}
+
+.experience h2{
+    display: inline-block;
+    border-bottom: 3px solid #E8F7EE;
 }
 
