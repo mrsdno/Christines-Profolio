@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.black-box {
+    background-color: rgb(54, 48, 48);
+    height: 300px;
+    position: relative;
+    float: right;
+    width: 77%;
+    margin-top:0;
+    z-index:0;
+}
+
+.black-box header {
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    line-height: 1.7;
+    text-align: right;
+    max-height:fit-content;
+    display: inline-block;
+}
+
+.black-box h1 {
+    border-bottom: 3px solid rgb(170, 135, 127);
+    display: inline-block;
+    font-size: 3vmax;
+}
+
+.black-box h2 {
+    font-size: 2vmax;
+}
+
+.black-box img {
+    position: relative;
+    display: inline;
+    left: -10vw;
+    top: 2vh;
+    z-index: 2;
+    width: 300px;
+     height: auto;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%
+}
+
+.dark-tan-box {
+    width: 23%;
+    background-color: rgb(170, 135, 127);
+    position: relative;
+    display: inline-block;
+    flex-direction:column;
+    height: 100vh;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.sidebar {
+    position: relative;
+    top: 375px;
+}
+
+.light-tan-box {
+    background-color: tan;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 77%;
+    height: 100%;
+    z-index: -1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.experience {
+    position: absolute;
+    top: 375px;
+}
+
