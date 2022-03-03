@@ -5,6 +5,9 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+body {
+    background-color:#8A817C;
+}
 h2 {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -159,8 +162,7 @@ ul, #education {
     z-index: -1;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 100vh;
-}
+    }
 
 .experience {
     position: relative;
