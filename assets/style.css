@@ -12,13 +12,13 @@ h2 {
     color: #CB997E;
 }
 
-p, ul, li{
+p, ul, li, a {
     font-size: 12px;
     line-height: 1.5em;
 }
 
 a {
-    color: white;
+    color:#CB997E;
 }
 
 li {
@@ -81,7 +81,6 @@ li {
     background-color: #6B705C;
     display: inline-block;
     color: white;
-
 }
 
 .profile {
@@ -89,13 +88,18 @@ li {
     top: 375px;
     background-color: inherit;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 5px;
     padding-bottom: 30px;
 }
 
 .profile h2 {
     border-bottom: 3px solid #E8F7EE;
     display: inline-block;
+}
+
+.profile p, a {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*education tree*/
@@ -108,8 +112,6 @@ ul, #education {
     margin: 0;
     padding: 0;
 }
-
-
 
 .caret {
     cursor: pointer;
@@ -151,17 +153,23 @@ ul, #education {
     color: white;
     position: absolute;
     right: 0px;
-    bottom: 0;
+    bottom: 0px;
     width: 77%;
-    height: 100%;
+    top: 300px;
     z-index: -1;
     padding-left: 30px;
     padding-right: 30px;
+    min-height: 100vh;
 }
 
 .experience {
-    position: absolute;
-    top: 375px;
+    position: relative;
+    top: 75px;
+    padding-left: 30px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    background-color: inherit;
+    display: inline-block;
 }
 
 .experience h2{
