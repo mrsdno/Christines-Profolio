@@ -30,46 +30,46 @@ li {
 
 /* start top right box */
 
-.top-right-box {
-    background-color: #463F3A;
-    height: 300px;
-    position: relative;
-    float: right;
-    width: 77%;
-    margin-top:0;
-    z-index:0;
+.main-body {
+    display: flexbox;
+    flex-direction: wrap;
+    justify-content: space-between;
 }
 
-.top-right-box header {
+header {
+    background-color: #463F3A;
+    margin-top:0;
     color: white;
-    position: absolute;
-    top: 10%;
-    right: 20px;
     line-height: 1.7;
     text-align: right;
-    max-height:fit-content;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-.top-right-box h1 {
+header h1 {
     border-bottom: 3px solid #E8F7EE;
-    display: inline-block;
-    font-size: 3vmax;
+    font-size: 46px;
     color: #CB997E;
 }
 
-.top-right-box h2 {
-    font-size: 2vmax;
+header h2 {
+    font-size: 40px;
 }
 
-.top-right-box img {
-    position: relative;
-    display: inline;
-    left: -10vw;
-    top: 2vh;
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header img {
     z-index: 2;
-    width: 300px;
-     height: auto;
+    width: 40vw;
+    height: auto;
+    max-width: 250px;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
     border: 3px solid #E8F7EE;
@@ -80,15 +80,12 @@ li {
 /* start left side box */
 
 .left-side-box {
-    width: 23%;
     background-color: #6B705C;
     display: inline-block;
     color: white;
 }
 
 .profile {
-    position: relative;
-    top: 375px;
     background-color: inherit;
     padding-left: 30px;
     padding-right: 5px;
@@ -154,15 +151,7 @@ ul, #education {
 .bottom-right-box {
     background-color:#8A817C;
     color: white;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 77%;
-    top: 300px;
-    z-index: -1;
-    padding-left: 30px;
-    padding-right: 30px;
-    }
+     }
 
 .experience {
     position: relative;
@@ -180,3 +169,13 @@ ul, #education {
 }
 
 /* end bottom right box */
+
+@media  screen and (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+}
