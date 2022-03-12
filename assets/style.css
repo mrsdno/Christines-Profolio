@@ -159,7 +159,7 @@ header nav a:hover {
     border-radius: 15px;
 }
 
-.about-me h2, .education h2, .profolio{
+.about-me h2, .education h2, .portfolio{
     display:inline-block;
     border-bottom: 2px solid white;
     font-weight: bold;
