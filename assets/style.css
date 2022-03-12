@@ -12,21 +12,11 @@
     --yellow: rgb(217,165,58);
     --purple: rgb(44,33,90);
     --red: rgb(190,30,45);
+    --white: #fff;
     }
 
 body {
-    background-color:#8A817C;
-}
-
-h2 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 36px;
- }
-
-p, ul, li, a {
-    font-size: 16px;
-    line-height: 1.5em;
+    background-color: var(--white);
 }
 
 a {
@@ -39,16 +29,10 @@ li {
 }
 
 
-/* start top right box */
-
-.main-body {
-    display: flexbox;
-    flex-direction: wrap;
-    justify-content: space-around;
-}
+/* start header */
 
 header {
-    background-color: #463F3A;
+    background-color: white;
     color: white;
     line-height: 1.7;
     text-align: right;
@@ -60,26 +44,23 @@ header {
     border-bottom: 3px solid var(--purple);
 }
 
-header h1 {
-    border-bottom: 3px solid var(--yellow);
-    font-size: 46px;
-}
-
-header h2 {
-    font-size: 40px;
+header img {
+    width: 300px;
+    height: auto;
 }
 
 header nav {
-    flex: 2;
+    flex: 1;
     margin: auto;
     flex-wrap: wrap;
 }
 
 header nav ul {
     display: flex;
+    gap: 10px 10px;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center; 
 }
 
 header nav a {
@@ -99,34 +80,15 @@ header nav a:hover {
 
 }
 
-.heading {
-    color: var(--yellow);
-}
+/* end header */
 
-/* start profile */
+/* content card start */
 
-.teal-background {
-    background-color: var(--teal);
-}
-
-.black-background {
-    background-color: var(--black);
-}
-
-.purple-background {
-    background-color: var(--purple);
-}
-
-.yellow-background {
-    background-color: var(--yellow);
-}
-
+/* flex wrapper for content cards */
 .flex-wrapper {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-
 .content-card {
     display: inline;
     max-width: 500px;
@@ -134,12 +96,14 @@ header nav a:hover {
     padding: 10px;
     color: white;
     margin: 30px 20px;
+    padding: 0 10px; 
     border-radius: 30px;
+    padding-top: 20px;
     }
 
-.content-card img {
+.photo-me {
     width: 300px;
-    height: auto;
+    height: autovw;
     border-radius: 15px;
     border: 3px solid #E8F7EE;
     }
@@ -148,33 +112,82 @@ header nav a:hover {
     font-size: 30px;
     padding: 10px;
 }
+/* content card end */
 
+/* about me start*/
 .about-me {
     background-color: var(--yellow);
     border-radius: 15px;
 }
 
+.about-me h2 {
+    display:inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+
+.about-me p {
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+/*about me end*/
+
+/*portfolio start*/
+
+.portfolio {
+    color: var(--purple);
+    font-size: 36px;
+    font-weight: bold;
+    display:inline-block;
+    margin: 10px;
+    border-bottom: 3px solid var(--purple);
+}
+
+.portfolio-img img{
+    width: 400px;
+    height:auto;
+    border: 3px solid var(--yellow);
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.portfolio-content {
+    background-color: var(--red);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.portfolio-content h3 {
+    font-size: 30px;
+    color: var(--white);
+    margin: 20px;
+    font-weight: bold;
+}
+
+.portfolio-content p {
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.project {
+    border-bottom: 2px solid var(--teal);
+    display: inline-block;
+    margin: 0 30px;
+}
+
+/*education tree*/
 .education {
     background-color: var(--purple);
     border-radius: 15px;
 }
 
-.about-me h2, .education h2, .portfolio{
-    display:inline-block;
-    border-bottom: 2px solid white;
-    font-weight: bold;
-    color: white;
-}
-
-
-
 .education ul {
     text-align: left;
 }
-
-/* end profile */
-
-/*education tree*/
 
 .caret {
     cursor: pointer;
@@ -207,11 +220,32 @@ header nav a:hover {
     display: block;
 }
 
+/*end education tree*/
+
+
 /*utility class */
 
 .text-center {
     text-align: center;
 }
+
+.teal-background {
+    background-color: var(--teal);
+}
+
+.black-background {
+    background-color: var(--black);
+}
+
+.purple-background {
+    background-color: var(--purple);
+}
+
+.yellow-background {
+    background-color: var(--yellow);
+}
+
+/* end utility class */
 
 @media  screen and (max-width: 600px) {
     header h1 {
