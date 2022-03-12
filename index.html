@@ -10,107 +10,95 @@
 <body>
        <!--header and navigation-->
         <header>
-        <img src="assets/img/img2.jpg" alt="A photo of Christine standing outside">
-        <div class="heading">
-        <h1>Christine Diienno</h1>
-        <h2>Software Engineer</h2>
-        <nav>
-            <ul>
-                <li><a href="">Profolio</a></li>
-                <li><a href="">Professional Experience</a></li>
-                <li><a href="">Contact Me</a></li>
-            </ul>
-        </nav>
-        </div>
+            <div class="heading">
+                <h1>Christine Diienno</h1>
+                <h2>Software Engineer</h2>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Profolio</a></li>
+                        <li><a href="">Contact Me</a></li>
+                    </ul>
+                </nav>
         </header>
   
    
-    <!--profolio-->
-    <div class="profolio">
-          <div class="profile">
-        <h2>PROFILE</h2>
-        <p>
-            <b>Highly motivated</b> and <b>diligent</b> professional looking to switch careers to pursue <b>passion for software development</b>. <br />
-        </p>    
-        <p>
-            Offers <b>5 years of experience</b> working in manufacturing environment as a <b>front-line supervisor</b> and <b>team-player</b>. <br />
-        </p>
-        <p>
-            Possesses <b>high degree of problem-solving</b> and <b>analytical skils</b> with a <b>self-motivated attitude</b>. <br /> 
-        </p>
-        <br />
-        <h2>EDUCATION</h2>
-        <!--create tree for education-->
-        <ul id="education">
-            <li><span class="caret">Rutgers Coding Bootcamp</span>
-                <ul class="nested">
-                    <li>Certificate of Completion</li>
-                    <li>February 2022-August 2022</li>
-                </ul>
-            <li><span class="caret">Rowan University</span>
-                <ul class="nested">
-                    <li>B.S. Chemistry</li>
-                    <li>May 2016</li>
-                    <li>Magna Cum Laude</li>
-                </ul>
-        </ul>
-        <br />
-        <h2>SKILLS</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>JavaScript</li>
-            <li>More to come</li>
-        </ul>
-        <br />
-        <h2>CONTACT</h2>
-        <p>(856) 649-6355</p>
-        <a href="mailto: christine@dno.dev">christine@dno.dev</a>
+    <!--first section-->
+    <div class="teal-background"> 
+        <section class="flex-wrapper">
+            <div class="content-card about-me">
+                <h2>About Me</h2>
+                    <p> I am a <b>highly motivated</b> and <b>diligent</b> professional looking to switch careers to pursue <b>passion for software development</b>. <br />
+                        I offers <b>5 years of experience</b> working in manufacturing environment as a <b>front-line supervisor</b> and <b>team-player</b>. <br />
+                        I also possess <b>high degree of problem-solving</b> and <b>analytical skils</b> with a <b>self-motivated attitude</b>. <br /> 
+                    </p>
+            <br />
+            </div>
+            <!--create tree for education-->
+            <div class="content-card education">
+                <h2>Education</h2>
+                <ul class="education">
+                        <li><span class="caret">Rutgers Coding Bootcamp</span>
+                            <ul class="nested">
+                                <li>Certificate of Completion</li>
+                                <li>February 2022-August 2022</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Rowan University</span>
+                            <ul class="nested">
+                                <li>B.S. Chemistry</li>
+                                <li>May 2016</li>
+                                <li>Magna Cum Laude</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <!--end tree-->
+            <br />
+                <div class="content-card">
+                    <img src="assets/img/img2.jpg" alt="A photo of Christine standing outside" />
+                </div>
         </div>
     </div>
 
-
-
-    <!--set up bottom right box with experience and project information-->
-    <div class="bottom-right-box">
-        <section class="experience">
-            <h2>EXPERIENCE</h2>
-            <h3>Hot End Section Supervisor, Corning Pharmaceutical Glass</h3>
-            <h4>June 2020-Present</h4>
-            <p>
-                ∙ Manage a team of twenty-four direct reports to ensure we meet production targets and practice continuous improvement in operation of borosilicate and aluminosilicate glass melters<br />
-                ∙ Able to quickly grasp glass melting and forming process understanding and develop a training program for new tank unit operators <br />
-                ∙ Chemical Handling subject matter expert for the plant, knowledgeable on OSHA Hazard Communication Standard (1910.1200) <br />
-            </p>
-            <br />
-            <h3>Quality Section Supervisor, Corning Pharmaceutical Glass</h2>
-            <h4>January 2019-June 2020</h3>
-            <p>
-                ∙ Promoted from Lab Engineer to Supervisor with expanded responsibilities including delegation of laboratory testing and managing Quality Control Inspectors on the manufacturing floor<br />
-                ∙ Completed many process improvements, including development of new reporting techniques that reduced overall reporting time by 50%<br />
-                ∙ Developed methods for testing glass-making raw materials<br />
-            </p>
-            <br />
-            <h3>Quality Lab Engineer, Corning Pharmaceutical Glass</h3>
-            <h4>May 2018-January 2019</h4>
-            <p>
-                ∙ Performed daily quality control testing of products following standard operating procedures and good manufacturing practices<br />
-                ∙ Operated, calibrated and maintained instrumentation including UV-Vis, XRF, and ICP<br />
-                ∙ Responsible for compiling data into reports, communicating results to customers, improving and updating procedures<br />
-            </p>
-            <br />
-            <h3>Analytical Chemist, Johnson Matthey (Refining and Chemicals)</h3>
-            <h4>March 2017-May 2018</h4>
-            <p>
-                ∙ Worked with a team to appraise precious metal samples according to standard operating procedures  <br />
-                ∙ Operated and troubleshot analytical instruments including ICP, ICP-MS, XRF, Flame AA, and UV-Vis <br />
-                ∙ Acted as a team leader with responsibilities including receiving, routing samples, reviewing assays for  accuracy and authorizing results to customers<br />
-            </p>
-        </section>
-    </div>
-    </div>
-    </body>
+    <!--second section-->
+    <div class="black-background text-center">
+        <h2 class="profolio">Profolio</h2>
+        <div class="flex-wrapper">
+            <div class="content-card purple-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+            <div class="content-card yellow-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+            <div class="content-card purple-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+            <div class="content-card yellow-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+            <div class="content-card purple-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+            <div class="content-card yellow-background">
+                <h3>Project Title</h3>
+                <img src="https://i.picsum.photos/id/1044/4032/2268.jpg?hmac=BXmoMkaurlzpTLYQupXLipcmI1sFbgT5sIz98Ob5VZE" />
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque quam quidem tempore magnam rerum deleniti itaque, quas dicta, voluptates possimus alias quibusdam aspernatur eveniet culpa consectetur quos, sapiente ea!</p>
+            </div>
+        </div>
+        </div>
+        </body>
     
     <script>
         var toggler = document.getElementsByClassName("caret");
