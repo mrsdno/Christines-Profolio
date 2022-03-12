@@ -20,7 +20,7 @@ body {
 }
 
 a {
-    color:var(--yellow);
+    color:var(--teal);
 }
 
 li {
@@ -88,6 +88,7 @@ header nav a:hover {
 .flex-wrapper {
     display: flex;
     justify-content: center;
+    padding: 50px 0;
 }
 .content-card {
     display: inline;
@@ -137,14 +138,17 @@ header nav a:hover {
 
 /*portfolio start*/
 
-.portfolio {
-    color: var(--purple);
+.portfolio, .contact-me {
+    color: var(--black);
     font-size: 36px;
     font-weight: bold;
     display:inline-block;
     margin: 10px;
-    border-bottom: 3px solid var(--purple);
+    border-bottom: 3px solid var(--black);
+    padding: 50px 0 10px 0;
 }
+
+
 
 .portfolio-img img{
     width: 400px;
@@ -156,9 +160,9 @@ header nav a:hover {
 }
 
 .portfolio-content {
-    background-color: var(--red);
     border-radius: 20px;
     margin: 20px;
+    padding: 0 10px;
 }
 
 .portfolio-content h3 {
@@ -175,8 +179,26 @@ header nav a:hover {
 
 .project {
     border-bottom: 2px solid var(--teal);
-    display: inline-block;
+    display: flex;
     margin: 0 30px;
+}
+
+/*end profolio*/
+
+/*contact section*/
+
+.contact-links a {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 30px; 
+}
+
+.contact-links img {
+    width: 100px;
 }
 
 /*education tree*/
@@ -237,6 +259,10 @@ header nav a:hover {
     background-color: var(--black);
 }
 
+.red-background {
+    background-color: var(--red);
+}
+
 .purple-background {
     background-color: var(--purple);
 }
@@ -259,5 +285,9 @@ header nav a:hover {
     .content-card img {
         width: 200px;
         height: auto;
+    }
+
+    .project {
+        flex-wrap:wrap; 
     }
 }
