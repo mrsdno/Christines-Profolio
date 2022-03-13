@@ -47,6 +47,7 @@ header {
 header img {
     width: 300px;
     height: auto;
+    padding: 20px 0;
 }
 
 header nav {
@@ -57,7 +58,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    gap: 10px 10px;
+    gap: 30px 10px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; 
@@ -87,7 +88,9 @@ header nav a:hover {
 /* flex wrapper for content cards */
 .flex-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px 10px;
     padding: 50px 0;
 }
 .content-card {
@@ -149,7 +152,6 @@ header nav a:hover {
 }
 
 
-
 .portfolio-img img{
     width: 400px;
     height:auto;
@@ -162,13 +164,13 @@ header nav a:hover {
 .portfolio-content {
     border-radius: 20px;
     margin: 20px;
-    padding: 0 10px;
+    padding: 20px 10px;
 }
 
 .portfolio-content h3 {
     font-size: 30px;
     color: var(--white);
-    margin: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
@@ -181,6 +183,10 @@ header nav a:hover {
     border-bottom: 2px solid var(--teal);
     display: flex;
     margin: 0 30px;
+}
+
+.project:last-child {
+    border-bottom: none;
 }
 
 /*end profolio*/
@@ -283,11 +289,25 @@ header nav a:hover {
     }
 
     .content-card img {
-        width: 200px;
+        width: 80vw;
         height: auto;
+    }
+
+    .portfolio-img img {
+        width: 40vh;
     }
 
     .project {
         flex-wrap:wrap; 
+    }
+
+    .content-card img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .project:nth-child(odd) {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
