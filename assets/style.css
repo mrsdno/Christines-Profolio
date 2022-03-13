@@ -110,7 +110,7 @@ header nav a:hover {
     width: 300px;
     height: autovw;
     border-radius: 15px;
-    border: 3px solid #E8F7EE;
+    border: 5px solid var(--white);
     }
 
 .content-card h3 {
@@ -156,7 +156,7 @@ header nav a:hover {
 .portfolio-img img{
     width: 400px;
     height:auto;
-    border: 3px solid var(--yellow);
+    border: 5px solid var(--yellow);
     margin: 20px;
     border-radius: 20px;
 
@@ -171,20 +171,51 @@ header nav a:hover {
 .portfolio-content h3 {
     font-size: 30px;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
 .portfolio-content p {
     color: var(--white);
+    font-size: 20px;
     line-height: 1.5;
+    padding-bottom: 10px;
+    margin: 0 20px;
+}
+
+.portfolio-content a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.portfolio-content a:hover {
+    color: var(--teal);
+}
+
+.first-project {
+    border-bottom: 5px solid var(--teal);
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+    align-items: center;
+    padding: 10px 20vw;
+}
+
+.first-project img {
+    width: 80vw;
+}
+
+.first-project .portfolio-content {
+    width: 80vw;
 }
 
 .project {
-    border-bottom: 2px solid var(--teal);
+    border-bottom: 5px solid var(--teal);
     display: flex;
-    margin: 0 30px;
+    margin: 0 10vw;
+    justify-content: center;
 }
+
 
 .project:last-child {
     border-bottom: none;
@@ -216,6 +247,10 @@ header nav a:hover {
 .contact-links h4 {
     font-style: italic;
     font-size: 12px;
+}
+
+.contact-links a:hover {
+    color: var(--red);
 }
 
 
@@ -311,6 +346,14 @@ header nav a:hover {
 
     .project {
         flex-wrap:wrap; 
+    }
+
+    .portfolio-content h3 {
+        font-size: 16px;
+    }
+
+    .portfolio-content p {
+        font-size: 12px;
     }
 
     .content-card img {
