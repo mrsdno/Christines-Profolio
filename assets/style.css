@@ -86,7 +86,7 @@ header nav a:hover {
 
 /* content card start */
 
-/* flex wrapper for content cards */
+/* reusable flex wrapper for content cards */
 .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +96,7 @@ header nav a:hover {
 }
 .content-card {
     display: inline;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
     padding: 10px;
     color: white;
@@ -158,8 +158,13 @@ header nav a:hover {
     height:auto;
     border: 5px solid var(--yellow);
     margin: 20px;
+    opacity: 80%;
     border-radius: 20px;
 
+}
+
+.portfolio-img img:hover {
+    opacity: 100%;
 }
 
 .portfolio-content {
@@ -223,7 +228,7 @@ header nav a:hover {
 
 /*end profolio*/
 
-/*contact section*/
+/* start contact section*/
 
 .contact-links a {
     background-color: var(--white);
@@ -253,52 +258,9 @@ header nav a:hover {
     color: var(--red);
 }
 
+/* end content section */
 
-/*education tree*/
-.education {
-    background-color: var(--purple);
-    border-radius: 15px;
-}
-
-.education ul {
-    text-align: left;
-}
-
-.caret {
-    cursor: pointer;
-    user-select: none;
-}
-
-.caret::before {
-    content: "\25b6";
-    color: #E8F7EE;
-    display: inline-block;
-    margin-right:5px;
-}
-
-.caret:hover {
-    color:var(--yellow);
-}
-.caret-down::before {
-    transform: rotate(90deg);
-}
-
-.nested {
-    display: none;
-}
-
-.nested li {
-    margin-left: 20px;
-}
-
-.active {
-    display: block;
-}
-
-/*end education tree*/
-
-
-/*utility class */
+/*utility classes */
 
 .text-center {
     text-align: center;
@@ -326,7 +288,9 @@ header nav a:hover {
 
 /* end utility class */
 
-@media  screen and (max-width: 600px) {
+/* resize content for smaller screens */
+
+@media screen and (max-width: 1000px) {
     header h1 {
         font-size: 22px;
     }
@@ -336,33 +300,38 @@ header nav a:hover {
     }
 
     .content-card img {
-        width: 80vw;
+        width: 60vw;
         height: auto;
     }
 
     .portfolio-img img {
-        width: 40vh;
+        width: 80vw;
     }
 
     .project {
         flex-wrap:wrap; 
+        align-content: center;
     }
 
     .portfolio-content h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .portfolio-content p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    .content-card img {
-        width: 80vw;
-        height: auto;
-    }
 
     .project:nth-child(odd) {
         flex-direction: column-reverse;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .content-card img {
+        width: 80vw;
+        height: auto;
     }
 }
