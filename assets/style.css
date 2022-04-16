@@ -96,7 +96,7 @@ header nav a:hover {
 }
 .content-card {
     display: inline;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     padding: 10px;
     color: white;
@@ -154,8 +154,8 @@ header nav a:hover {
 
 
 .portfolio-img img{
-    width: 400px;
-    height:auto;
+    width: auto;
+    height: 250px;
     border: 5px solid var(--yellow);
     margin: 20px;
     opacity: 90%;
