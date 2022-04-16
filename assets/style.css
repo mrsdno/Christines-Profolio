@@ -295,7 +295,20 @@ header nav a:hover {
     align-items: center;
     padding-bottom: 40px;
 }
+
+
+
+.resume-link, .resume-link a {
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
  
+.resume-link a:hover {
+    color: var(--teal);
+}
   .carousel {
     position: relative;
     width: 100%;
