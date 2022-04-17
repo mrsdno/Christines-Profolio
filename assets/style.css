@@ -314,93 +314,93 @@ header nav a:hover {
 .resume-link a:hover {
     color: var(--teal);
 }
-  .carousel {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-    line-height: 30px;
-    display: flex;
-    align-content: center;
-  }
+.carousel {
+position: relative;
+width: 100%;
+text-align: center;
+font-size: 28px;
+line-height: 30px;
+display: flex;
+align-content: center;
+}
 
-  .carousel .pre {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    height: 30px;
-    color: var(--yellow);
+.carousel .pre {
+position: absolute;
+top: 0;
+right: 50%;
+height: 30px;
+color: var(--yellow);
+font-weight: bold;
+}
+.carousel .change_outer {
+position: absolute;
+top: 0;
+left: 54%;
+text-align: left;
+height: 30px;
+overflow: hidden;
+}
+.carousel .change_outer .change_inner {
+position: relative;
+animation: rotate 20s ease-in-out infinite;
+}
+.carousel .change_outer {
+display: block;
+}
+
+.element {
+    color: var(--teal);
     font-weight: bold;
-  }
-  .carousel .change_outer {
-    position: absolute;
-    top: 0;
-    left: 54%;
-    text-align: left;
-    height: 30px;
-    overflow: hidden;
-  }
-  .carousel .change_outer .change_inner {
-    position: relative;
-    animation: rotate 20s ease-in-out infinite;
-  }
-  .carousel .change_outer {
+}
+
+.element2 {
     display: block;
-  }
+    color: var(--white);
+    font-weight: bold;
+}
 
-  .element {
-      color: var(--teal);
-      font-weight: bold;
-  }
+@keyframes rotate {
+3%, 8%, 1% {
+            transform: translateY(0);
+}
+13%, 18% {
+            transform: translateY(-30px);
+}
+21%, 26% {
+            transform: translateY(-60px);
+}
+29%, 34% {
+            transform: translateY(-90px);
+}
+37%, 42% {
+        transform: translateY(-120px);
+}
+45%, 50% {
+            transform: translateY(-150px);
+}
+53%, 58% {
+    transform: translateY(-180px);
+}
+61%, 66% {
+    transform: translateY(-210px);
+}
+69%, 71% {
+    transform: translateY(-240px);
+}
+77%, 82% {
+    transform: translateY(-270px);
+}
+85%, 90% {
+    transform: translateY(-300px);
+}
+93%, 98% {
+    transform: translateY(-330px);
+}
+100% {
+    transform: translateY(-360px);
+}
+}
 
-  .element2 {
-      display: block;
-      color: var(--white);
-      font-weight: bold;
-  }
-  
-  @keyframes rotate {
-    3%, 8%, 1% {
-              transform: translateY(0);
-    }
-    13%, 18% {
-              transform: translateY(-30px);
-    }
-    21%, 26% {
-              transform: translateY(-60px);
-    }
-    29%, 34% {
-              transform: translateY(-90px);
-    }
-    37%, 42% {
-            transform: translateY(-120px);
-    }
-    45%, 50% {
-              transform: translateY(-150px);
-    }
-    53%, 58% {
-        transform: translateY(-180px);
-    }
-    61%, 66% {
-        transform: translateY(-210px);
-    }
-    69%, 71% {
-        transform: translateY(-240px);
-    }
-    77%, 82% {
-        transform: translateY(-270px);
-    }
-    85%, 90% {
-        transform: translateY(-300px);
-    }
-    93%, 98% {
-        transform: translateY(-330px);
-    }
-    100% {
-        transform: translateY(-360px);
-    }
-  }
-  
 
 
 /* resize content for smaller screens */
@@ -448,6 +448,40 @@ header nav a:hover {
     .content-card img {
         width: 80vw;
         height: auto;
+    }
+
+    .carousel {
+        font-size: 18px;
+        }
+        
+    
+    .portfolio-img img{
+        width: 300px;
+        height: auto;
+        border: 2px solid var(--yellow);
+        margin: 10px;
+        opacity: 100%;
+
+    }
+
+    .portfolio-content {
+        margin: 10px;
+        padding: 10px 5px;
+    }
+
+    .portfolio-content h3 {
+        font-size: 20px;
+    }
+    
+    .portfolio-content p {
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin: 0 10px 5x 10px;
+    }
+    
+    .portfolio-content a {
+        font-size: 12px;
+        padding: 5px;
     }
 }
 
