@@ -35,13 +35,11 @@ header {
     background-color: white;
     color: white;
     line-height: 1.7;
-    text-align: right;
+    text-align: left;
     display: flex;
-    align-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding: 20px 35px;
-    border-bottom: 10px solid var(--purple);
-    border-top: 10px solid var(--purple);
 }
 
 header img {
@@ -52,6 +50,7 @@ header img {
 
 header nav {
     flex: 1;
+    justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -60,7 +59,8 @@ header nav ul {
     display: flex;
     gap: 30px 10px;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-left: 5vw;
     align-items: center; 
 }
 
@@ -438,26 +438,14 @@ footer {
 /* resize content for smaller screens */
 
 @media screen and (max-width: 1000px) {
-    header h1 {
-        font-size: 22px;
-    }
-
-    header h2 {
-        font-size: 18px;
-    }
-
-    .content-card img {
-        width: 60vw;
-        height: auto;
-    }
-
-    .portfolio-img img {
-        width: 80vw;
-    }
 
     .project {
-        flex-wrap:wrap; 
-        align-content: center;
+        flex-direction: column;
+        margin: 0; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
     }
 
     .portfolio-content h3 {
@@ -488,17 +476,14 @@ footer {
         
     
     .portfolio-img img{
-        width: 300px;
-        height: auto;
+        max-width: 80vw;
         border: 2px solid var(--yellow);
-        margin: 10px;
         opacity: 100%;
 
     }
 
     .portfolio-content {
-        margin: 10px;
-        padding: 10px 5px;
+        width: 80vw;
     }
 
     .portfolio-content h3 {
